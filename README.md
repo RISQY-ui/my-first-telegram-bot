@@ -1,75 +1,54 @@
----
-
-🤖 Mahiru Bot - Telegram Bot Project
+# 🤖 Mahiru Bot - Telegram Bot Project
 
 A simple Telegram bot created using Python and the pyTelegramBotAPI library. This bot was built to learn automation and API integration.
 
-📋 How to Create This Bot
+## How to Create This Bot
 
 This documentation explains the steps I followed to bring my bot to life.
 
-1. 📝 The "Birth" Phase (BotFather)
+### 1. The "Birth" Phase (BotFather)
 
-· Search for @BotFather on Telegram.
-· Use the /newbot command to create a new bot.
-· Give the bot a Name and a Username (must end with _bot).
-· Save the Token! This is the most important key (the long string of numbers and letters).
+- Search for `@BotFather` on Telegram.
+- Use the `/newbot` command to create a new bot.
+- Give the bot a **Name** and a **Username** (must end with `_bot`).
+- **Save the Token!** This is the most important key.
 
-2. ⚙️ Setting Up the "Kitchen" (Termux)
+### 2. Setting Up the "Kitchen" (Termux)
 
-I prepared my environment on Termux (Android terminal emulator).
+1. Update the system:  
+   `pkg update && pkg upgrade`
+2. Install Python:  
+   `pkg install python`
+3. Install the library:  
+   `pip install pyTelegramBotAPI`
 
-1. Update the system:
-   ```bash
-   pkg update && pkg upgrade
-   ```
-2. Install Python:
-   ```bash
-   pkg install python
-   ```
-3. Install the required library (the "spice"):
-   ```bash
-   pip install pyTelegramBotAPI
-   ```
+### 3. Writing the Code (Nano Editor)
 
-3. ✍️ Writing the "Spell" (Nano Editor)
-
-I wrote the Python script using the nano text editor.
-
-1. Create a new file:
-   ```bash
-   nano mahiru.py
-   ```
+1. Create a new file:  
+   `nano mahiru.py`
 2. Paste the Python code into the editor.
-3. Save the file:
-   · Press CTRL + O (Write Out).
-   · Press ENTER to confirm.
-   · Press CTRL + X to exit.
+3. Save the file:  
+   - Press `CTRL + O` (Write Out).  
+   - Press `ENTER` to confirm.  
+   - Press `CTRL + X` to exit.
 
-4. 🚀 "Awakening" the Bot
+### 4. Running the Bot
 
-The most exciting moment!
+- Run the script:  
+  `python mahiru.py`
+- If you see `"🌸 Mahiru is awake..."`, the bot is alive.
 
-· Run the script:
-  ```bash
-    python mahiru.py
-  ```
-· If you see the message "🌸 Mahiru sudah bangun..." (or your bot's startup message), it means the bot is alive and ready.
+> The bot will only work while Termux is open and your internet is stable.
 
-Important: The bot will only work while Termux is open and your internet connection is stable. If the cursor just sits there blinking, it means the bot is in standby mode, waiting for messages.
+### 5. The Grand Launch (on Telegram)
 
-5. 🎉 The Grand Launch (on Telegram)
+- Open your bot on Telegram.
+- Click the **START** button.
+- If the bot replies, congratulations! You are a **Master Developer**!
 
-· Open your bot on Telegram.
-· Click the START button.
-· If the bot replies to you, congratulations! You are officially a Master Developer! 🏆🦾
+## Author
 
----
-
-👨‍💻 Author
-
-Faris – [Your GitHub Profile Link]
-
+**Faris** – [Your GitHub Profile Link]
 code: import telebot
 
 # Your bot token from BotFather
